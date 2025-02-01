@@ -59,8 +59,7 @@
         <section class="px-4 lg:px-32 flex justify-center">
             <div class="absolute px-3 lg:px-32">
                 <h1 class="text-4xl lg:text-6xl adlam-display mb-4 relative">Pamper Your Pet, <br>Because They Deserve
-                    <br>the
-                    Bes
+                    <br>the Best
                 </h1>
                 <p class="w-4/6 text-xs lg:text-xl opacity-80 mb-6">Discover a world of treats, toys, and essentials
                     handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
@@ -74,6 +73,48 @@
         </section>
     </header>
     <main class="md:container mx-auto">
+        <!-- Challenge: Carousel Section -->
+        <section class="mb-20">
+            <div class="carousel w-full lg:h-[550px] bg-orange-50">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="flex flex-col lg:flex-row p-4 lg:p-32 items-center lg:gap-36">
+                        <!-- Text Content -->
+                        <div class="space-y-5 flex-1">
+                            <h2 class="text-4xl lg:text-6xl adlam-display">Meet Our Furry Friends</h2>
+                            <p class="text-xs lg:text-xl opacity-80">Discover our cutest selection of dogs and cats looking for a loving home. Whether you're a dog person, a cat lover, or both—we have the perfect pet for you!</p>
+                            <button
+                            class="hover:bg-yellow-400 hover:outline-yellow-400 bg-yellow-300 outline outline-yellow-300 text-xs lg:text-xl px-7 py-2 rounded-lg mt-6">Purchase</button>
+                        </div>
+                        <!-- Image -->
+                        <div class="flex">
+                            <img src="c1-assets/cute-dog-mid.png" alt="" class="w-80">
+                        </div>
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide2" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                </div>    
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="flex flex-col lg:flex-row p-4 lg:p-32 items-center lg:gap-36">
+                        <!-- Text Content -->
+                        <div class="space-y-5 flex-1">
+                            <h2 class="text-4xl lg:text-6xl adlam-display">Dogs & Cats: <br> Your New Best Friends</h2>
+                            <p class="text-xs lg:text-xl opacity-80">Looking for a loyal friend? Our adorable dogs and cats are ready to bring love, joy, and endless cuddles into your life!</p>
+                            <button
+                            class="hover:bg-yellow-400 hover:outline-yellow-400 bg-yellow-300 outline outline-yellow-300 text-xs lg:text-xl px-7 py-2 rounded-lg mt-6">Purchase</button>
+                        </div>
+                        <!-- Image -->
+                        <div class="flex">
+                            <img src="c1-assets/cute-pet-mid.png" alt="">
+                        </div>
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide1" class="btn btn-circle">❮</a>
+                            <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                </div>    
+        </section>
         <!-- Browse by Categories -->
         <section class="px-4 lg:px-32 mb-28">
             <h1 class="adlam-display text-3xl lg:text-4xl mb-10 lg:mb-12">Browse By Categories</h1>
@@ -175,17 +216,17 @@
                 <div class="grid grid-cols-2 lg:grid-cols-3 gap-5 lg:-ml-[12.5rem]">
                     <!-- Card 1 -->
                     <div
-                        class="flex bg-white border border-stone-200 rounded-lg gap-3 pl-4 items-center lg:w-64 lg:h-28">
+                        class="flex bg-white border border-stone-200 rounded-lg gap-3 pl-4 py-4 items-center lg:w-64 lg:h-28">
                         <div class="bg-orange-50 rounded-lg w-12 h-12 lg:w-20 lg:h-20 flex items-center justify-center">
                             <img class="w-7 lg:w-12" src="c1-assets/dog-cartoon.png" alt="">
                         </div>
                         <div class="">
                             <div class="flex items-center gap-1">
-                                <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
-                                <p>4.5</p>
+                                <i class="fa-solid fa-star fa-2xs lg:fa-xs" style="color: #FFD43B;"></i>
+                                <p class="text-[0.625rem] lg:text-[0.875rem]">4.5</p>
                             </div>
-                            <p class="font-medium">Pet Bed</p>
-                            <p class="font-medium">$39.99</p>
+                            <p class="font-medium text-[0.75rem] lg:text-[1.125rem]">Dog Bed</p>
+                            <p class="font-medium text-[0.625rem] lg:text-[0.875rem]">$39.99</p>
                         </div>
                     </div>
                     <!-- Card 2 -->
@@ -198,25 +239,25 @@
                         <div class="">
                             <div class="flex items-center gap-1">
                                 <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
-                                <p>4.5</p>
+                                <p class="text-[0.625rem] lg:text-[0.875rem]">4.5</p>
                             </div>
-                            <p class="font-medium">Pet Bed</p>
-                            <p class="font-medium">$39.99</p>
+                            <p class="font-medium text-[0.75rem] lg:text-[1.125rem]">Fish Tank</p>
+                            <p class="font-medium text-[0.625rem] lg:text-[0.875rem]">$39.99</p>
                         </div>
                     </div>
                     <!-- Card 3 -->
                     <div
-                        class="flex bg-white border border-stone-200 rounded-lg gap-3 pl-4 items-center lg:w-64 lg:h-28">
+                        class="flex bg-white border border-stone-200 rounded-lg gap-3 pl-4 py-4 items-center lg:w-64 lg:h-28">
                         <div class="bg-orange-50 rounded-lg w-12 h-12 lg:w-20 lg:h-20 flex items-center justify-center">
                             <img class="w-7 lg:w-12" src="c1-assets/bird-cartoon.png" alt="">
                         </div>
                         <div class="">
                             <div class="flex items-center gap-1">
                                 <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
-                                <p>4.5</p>
+                                <p class="text-[0.625rem] lg:text-[0.875rem]">4.5</p>
                             </div>
-                            <p class="font-medium">Pet Bed</p>
-                            <p class="font-medium">$39.99</p>
+                            <p class="font-medium text-[0.75rem] lg:text-[1.125rem]">Bird Cage</p>
+                            <p class="font-medium text-[0.625rem] lg:text-[0.875rem]">$39.99</p>
                         </div>
                     </div>
                     <!-- Card 4 -->
@@ -228,25 +269,25 @@
                         <div>
                             <div class="flex items-center gap-1">
                                 <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
-                                <p>4.5</p>
+                                <p class="text-[0.625rem] lg:text-[0.875rem]">4.5</p>
                             </div>
-                            <h5 class="font-medium">Pet Bed</h5>
-                            <p class="font-medium">$39.99</p>
+                            <h5 class="font-medium text-[0.75rem] lg:text-[1.125rem]">Pet Bed</h5>
+                            <p class="font-medium text-[0.625rem] lg:text-[0.875rem]">$39.99</p>
                         </div>
                     </div>
                     <!-- Card 5 -->
                     <div
-                        class="flex bg-white border border-stone-200 rounded-lg gap-3 pl-4 items-center  lg:w-64 lg:h-28">
+                        class="flex bg-white border border-stone-200 rounded-lg gap-3 pl-4 py-4 items-center  lg:w-64 lg:h-28">
                         <div class="bg-orange-50 rounded-lg w-12 h-12 lg:w-20 lg:h-20 flex items-center justify-center">
                             <img class="w-7 lg:w-12" src="c1-assets/bird-cartoon.png" alt="">
                         </div>
                         <div>
                             <div class="flex items-center gap-1">
                                 <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
-                                <p>4.5</p>
+                                <p class="text-[0.625rem] lg:text-[0.875rem]">4.5</p>
                             </div>
-                            <h5 class="font-medium">Pet Bed</h5>
-                            <p class="font-medium">$39.99</p>
+                            <h5 class="font-medium text-[0.75rem] lg:text-[1.125rem]">Bird Cage</h5>
+                            <p class="font-medium text-[0.625rem] lg:text-[0.875rem]">$39.99</p>
                         </div>
                     </div>
                     <!-- Card 6 -->
@@ -258,25 +299,25 @@
                         <div>
                             <div class="flex items-center gap-1">
                                 <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
-                                <p>4.5</p>
+                                <p class="text-[0.625rem] lg:text-[0.875rem]">4.5</p>
                             </div>
-                            <h5 class="font-medium">Pet Bed</h5>
-                            <p class="font-medium">$39.99</p>
+                            <h5 class="font-medium text-[0.75rem] lg:text-[1.125rem]">Pet Bed</h5>
+                            <p class="font-medium text-[0.625rem] lg:text-[0.875rem]">$39.99</p>
                         </div>
                     </div>
                     <!-- Card 7 -->
                     <div
-                        class="flex bg-white border border-stone-200 rounded-lg gap-3 pl-4 items-center  lg:w-64 lg:h-28">
+                        class="flex bg-white border border-stone-200 rounded-lg gap-3 pl-4 py-4 items-center  lg:w-64 lg:h-28">
                         <div class="bg-orange-50 rounded-lg w-12 h-12 lg:w-20 lg:h-20 flex items-center justify-center">
                             <img class="w-7 lg:w-12" src="c1-assets/fish-cartoon.png" alt="">
                         </div>
                         <div>
                             <div class="flex items-center gap-1">
                                 <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
-                                <p>4.5</p>
+                                <p class="text-[0.625rem] lg:text-[0.875rem]">4.5</p>
                             </div>
-                            <h5 class="font-medium">Pet Bed</h5>
-                            <p class="font-medium">$39.99</p>
+                            <h5 class="font-medium text-[0.75rem] lg:text-[1.125rem]">Fish Tank</h5>
+                            <p class="font-medium text-[0.625rem] lg:text-[0.875rem]">$39.99</p>
                         </div>
                     </div>
                     <!-- Card 8 -->
@@ -288,25 +329,25 @@
                         <div>
                             <div class="flex items-center gap-1">
                                 <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
-                                <p>4.5</p>
+                                <p class="text-[0.625rem] lg:text-[0.875rem]">4.5</p>
                             </div>
-                            <h5 class="font-medium">Pet Bed</h5>
-                            <p class="font-medium">$39.99</p>
+                            <h5 class="font-medium text-[0.75rem] lg:text-[1.125rem]">Pet Bed</h5>
+                            <p class="font-medium text-[0.625rem] lg:text-[0.875rem]">$39.99</p>
                         </div>
                     </div>
                     <!-- Card 9 -->
                     <div
-                        class="flex bg-white border border-stone-200 rounded-lg gap-3 pl-4 items-center  lg:w-64 lg:h-28">
+                        class="flex bg-white border border-stone-200 rounded-lg gap-3 pl-4 py-4 items-center  lg:w-64 lg:h-28">
                         <div class="bg-orange-50 rounded-lg w-12 h-12 lg:w-20 lg:h-20 flex items-center justify-center">
                             <img class="w-7 lg:w-12" src="c1-assets/rabbit-cartoon.png" alt="">
                         </div>
                         <div>
                             <div class="flex items-center gap-1">
                                 <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
-                                <p>4.5</p>
+                                <p class="text-[0.625rem] lg:text-[0.875rem]">4.5</p>
                             </div>
-                            <h5 class="font-medium">Pet Bed</h5>
-                            <p class="font-medium">$39.99</p>
+                            <h5 class="font-medium text-[0.75rem] lg:text-[1.125rem]">Pet Bed</h5>
+                            <p class="font-medium text-[0.625rem] lg:text-[0.875rem]">$39.99</p>
                         </div>
                     </div>
                     <!-- Card 10 -->
@@ -318,10 +359,10 @@
                         <div>
                             <div class="flex items-center gap-1">
                                 <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
-                                <p>4.5</p>
+                                <p class="text-[0.625rem]">4.5</p>
                             </div>
-                            <h5 class="font-medium">Pet Bed</h5>
-                            <p class="font-medium">$39.99</p>
+                            <h5 class="font-medium text-[0.75rem]">Pet Bed</h5>
+                            <p class="font-medium text-[0.625rem]">$39.99</p>
                         </div>
                     </div>
                 </div>
@@ -388,7 +429,7 @@
                 <p class="text-gray-600">Discover a world of treats, toys, and <br> essentials handpicked for your furry
                     friends</p>
             </nav>
-            <nav class="lg:-ml-48 mb-6">
+            <nav class="lg:-ml-44 mb-6">
                 <h6 class="text-2xl mb-1 lg:mb-3">Find a pet</h6>
                 <div class="flex flex-col">
                     <a class="link link-hover mb-1 lg:mb-3">Breeds</a>
@@ -397,7 +438,7 @@
             </nav>
             <nav>
                 <h6 class="font-medium text-[1rem] mb-6 lg:mt-4">Follow Us</h6>
-                <div class="grid grid-flow-col lg:gap-4">
+                <div class="flex gap-4">
                     <a href="">
                         <i class="fa-brands fa-facebook fa-lg"></i>
                     </a>
